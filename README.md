@@ -66,13 +66,13 @@ sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/
 bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 ```
 
-## آموزش ساخت ربات در BotFather ( مرحله به مرحله )
-- وارد ربات [@BotFather](https://t.me/BotFather) شوید و ربات را `/start` کنید.
-- دستور `/newbot` را جهت ساخت ربات جدید ارسال کنید.
-- نام ربات خود را ارسال کنید.
-- یوزرنیم ربات خود را ارسال کنید ( اخر یوزرنیم باید `bot` باشد ).
-- در صورت صحیح بودن یوزرنیم ارسالی ربات شما ساخته خواهد شد.
-- نمونه توکن ربات :
+## Teaching how to make a robot in BotFather (step by step)
+- Login to the bot [@BotFather](https://t.me/BotFather) and `/start' the bot.
+- Send the `/newbot' command to create a new bot.
+- Submit your bot name.
+- Submit your bot username (the last username must be ``bot'').
+- If the username sent is correct, your robot will be created.
+- Robot token example:
 ```bash
 66332901756:AAFsGVqaydeIeQJsqCcVbhSJ9fiyBLtR9VU0s
 ```
