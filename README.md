@@ -1,63 +1,62 @@
- ## آموزش راه اندازی و نصب ربات روی هاست ( سیپنل )
-- وارد ربات بات فادر [@BotFather](https://t.me/BotFather) شوید و با دستور `/new_bot` یک ربات جدید ساخته و توکن را دریافت کنید.
-- وارد هاست خود شوید و به قسمت [ `MySQL® Database Wizard` ] مراجعه کنید و یک دیتابیس جدید ساخته و همه دسترسی های لازمه را فعال کنید.
-- وارد پوشه [ `public_html` ] شوید و در این پوشه یک پوشه جدید ( نام دلخواه ) ایجاد کنید.
-- همه فایل ها و پوشه های ربات زنبور پنل را به صورت دقیق و درست در پوشه ای که ساختید آپلود کنید.
-- فایل `install.html` را اجرا کنید , نمونه ادرسی که باید اجرا کنید : ( که در این نمونه آدرس `Domain.com` برابر با دامین شما و `folder` برابر با نام پوشه ای که ساخته بودید )
+## Teaching how to set up and install the robot on the host (Sipnel)
+- Enter BotFather bot [@BotFather](https://t.me/BotFather) and create a new bot with `/new_bot` command and get the token.
+- Log in to your host and go to the [`MySQL® Database Wizard'] section and create a new database and activate all the necessary accesses.
+- Enter the [`public_html`] folder and create a new folder (any name) in this folder.
+- Upload all the files and folders of the bee panel robot accurately and correctly in the folder you created.
+- Run the ``install.html'' file, the address example you should run: (in this example, ``Domain.com'' is equal to your domain and ``folder'' is equal to the name of the folder you created)
 ```bash
 https://Domain.com/folder/install/install.html
 ```
-- تمامی ورودی های خواسته شده از شما را در صفحه به صورت دقیق و صحیح وارد کنید و در نهایت بر روی دکمه **ثبت و نصب ربات** کلیک کنید.
-- آیدی عددی خود را میتوانید از طریق ربات [@UserInfoBot](https://t.me/userinfobot) دریافت کنید.
-- بعد از پر کردن تمامی فیلد های لازمه و زدن دکمه **ثبت و نصب ربات** یک پیام موفقیت آمیز در ربات به شما ارسال خواهد شد.
-- از طریق دستور `/panel` یا `panel` میتوانید وارد پنل مدیریت ربات شوید.
+- Enter all the required entries on the page accurately and correctly and finally click on **Register and install the robot** button.
+- You can get your numerical ID through the bot [@UserInfoBot](https://t.me/userinfobot).
+- After filling all the required fields and pressing the button **register and install the robot**, a successful message will be sent to you in the robot.
+- You can enter the robot management panel through the `/panel' or ``panel'' command.
 
- ## آموزش راه اندازی و نصب ربات روی سرور
-- وارد سرور خود شوید.
-- دستور زیر رو برای نصب ربات ارسال کنید.
+ ## Teaching how to set up and install the bot on the server
+- Log in to your server.
+- Send the following command to install the robot.
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ZanborPanel/ZanborPanel/main/zanbor.sh)
-```
-- بعد از اجرای این دستور باید کمی صبر کنید تا به مرحله وارد کردن دامنه برسید.
-- دامنه اتون را بدون `http` و `https` وارد کنید ( حتما باید `SSL` دامنه فعال باشد )
-- بعد از وارد کردن دامنه کمی باید صبر کنید تا به مرحله ساخت دیتابیس برسید.
-- وقتی به مرحله دیتابیس رسیدید از شما اطلاعات دیتابیس رو میخواد , در صورتی که میخوایید به صورت دیفالت همه چیو بسازه در قسمت مرحله دیتابیس هر دو قسمت رو `enter` بزنید.
-- بعد از به اتمام رسیدن این بخش دیتابیس شما ساخته خواهد شد و در مرحله بعدی از شما سه تا اطلاعات گرفته میشه باید وارد کنید ( `token` | `chat_id` | `domain` )
-- بعد از وارد کردن این اطلاعات ربات زنبور بر روی سرور شما نصب خواهد شد.
-- بعد از نصب یک پیام مبنی بر موفقیت آمیز بودن نصب در ربات به شما ارسال خواهد شد.
-- وارد ربات شوید و ربات را `/start` کنید.
+```- After executing this command, you have to wait a little until you reach the step of entering the domain.
+- Enter your domain without ``http'' and ``https'' (the ``SSL'' domain must be active)
+- After entering the domain, you have to wait a little until you reach the stage of creating the database.
+- When you reach the database stage, it will ask you for the database information, if you want to create everything by default, press `enter' in both parts of the database stage.
+- After the completion of this section, your database will be created, and in the next step, you will be asked three pieces of information that you must enter (`token` | `chat_id` | `domain`)
+- After entering this information, the bee robot will be installed on your server.
+- After installation, a message will be sent to you stating that the installation is successful in the robot.
+- Enter the robot and `/start' the robot.
 
-## آموزش آپدیت ربات
-- برای آپدیت ربات به اخرین نسخه فقط کافیست دستور زیر را اجرا کنید :
+## Robot update tutorial
+- To update the robot to the latest version, just run the following command:
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ZanborPanel/ZanborPanel/main/update.sh)
 ```
-- بعد از اجرای این دستور , برای آپدیت دستور `1` را ارسال کنید و سپس `y`
+- After executing this command, send command `1` and then `y` to update
 
-## سوالات متداول
-- **جوین اجباری**: قفل چوین اجباری ربات از طریق پنل مدیریت ربات تنظیم میشه و محدودتی نداره یعنی میتونید تعداد 5 تا هم جوین اجباری ثبت کنید.
-- **ثبت نشدن پنل/سرور در ربات**: دلایل زیادی باعث لاگین نشدن ربات به پنل شما میشه برای مثال باز نبودن دسترسی `CURL` به صورت کامل موفق خطا گرفتن داخل متن توضیحات هست.
-- **خطای ست وبهوک موقع نصب**: این خطا زمانی رخ میدهد که توکن ارسالی اشتباه باشد یا هاست شما نمیتواند برای ست وبهوک کردن ربات به سایت تلگرام request بفرستد که دلیل ارسال request ناموفق بسته بودن دسترسی `curl` یا ایرانی بودن هاستتان است.
-- **خطای توکن اشتباه موفق نصب**: همونطور که از متن خطا معلومه توکن که برای نصب ارسال کردید اشتباه هست.
-- **خطای اطلاعات دیتابیس**: این خطا زمانی رخ میدهد که اطلاعات دیتابیس ارسالی شما به اشتباه هست ( `name` , `username`, `password` ).
+## Frequently asked questions
+- **Mandatory Joining**: The bot's mandatory joining lock is set through the robot's management panel, and there is no limit, that is, you can register 5 mandatory joinings.
+- **Not registering the panel/server in the robot**: there are many reasons for the robot not logging in to your panel, for example, the ``CURL'' access is not fully open, there is an error in the description text.
+- **set and hook error during installation**: This error occurs when the sent token is wrong or your host cannot send a request to the Telegram site to set and hook the robot, and the reason for sending the unsuccessful request is because ``curl'' access is closed or your host is Iranian. is
+- **Wrong token error installation successful**: As it is clear from the error text, the token you sent for installation is wrong.
+- **Database information error**: This error occurs when the database information you send is wrong (`name`, `username`, `password`).
 
-## دسترسی های لازم برای نصب روی هاست
-- باز بودن دسترسی `CURL`
-- باز بودن دسترسی `curl_exec`
-- باز بودن پورت های لازمه مثلا `8000`
-- مجوز لازم برای ساخت/حذف/ویرایش فایل
-- ورژن هاست روی `7.4` باشه ( به زودی روی همه نسخه ها کار میکنه )
+## Necessary permissions to install on the host
+- CURL access is open
+- Opening ``curl_exec'' access
+- Open the necessary ports, for example `8000`
+- Necessary permission to create/delete/edit the file
+- Host version should be `7.4` (soon it will work on all versions)
 
-## نکات مهم
-- به هیچ وجه ادیت خاصی روی سورس اعمال نکنید اگه آپشن خاصی مد نظر دارید در [گروه تلگرامی](https://t.me/ZanborPanelGap) زنبور پنل میتونید نظرات خود را ثبت کنید.
-- حتما حتما ربات جدید برای نصب ربات بسازید یعنی از توکن های قبلی خود استفاده نکنید.
-- اطلاعات دیتابیس رو به درستی وارد کنید.
-- موقع افزودن پنل به ربات اگر پنلتون ssl داشت ادرس ورودی رو با `https` بدید و در غیر این صورت `http` وارد کنید.
-- برای ران کردن ربات در هاست حتما باید ssl دامنه فعال باشد.
-- در صورت ران کردن روی هاست , هاست باید خارجی باشد.
-- در صورت ران کردن روی سرور باید پسورد `roor` را بدانید.
+## Important points
+- Do not apply any special edits on the source, if you have a special option in mind, you can register your comments in [Telegram group](https://t.me/ZanborPanelGap) ZanborPanelGap.
+- Be sure to create a new bot to install the bot, that is, do not use your previous tokens.
+- Enter the database information correctly.
+- When adding a panel to the robot, if your panel has ssl, enter the input address with `https' and otherwise enter ``http''.
+- To run the bot on the host, ssl domain must be active.
+- If running on a host, the host must be foreign.
+- If running on the server, you must know the ``roor'' password.
 
-## **پنل های پشتیبانی شده در ربات**
+## **supported panels in the robot**
 - Marzban
 ```bash
 sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban.sh)" @ install
@@ -78,51 +77,50 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 66332901756:AAFsGVqaydeIeQJsqCcVbhSJ9fiyBLtR9VU0s
 ```
 
-## امکانات ربات زنبور پنل
-- دیزاین شیک و خاش
-- مولتی پنل
-- مولتی پلن
-- افزودن پنل
-- ساپورت از پنل سنایی و مرزبان
-- افزودن پلن با فیلد های دلخواه
-- اشتراک هوشمند
-- وضعیت کامل سرور/پنل
-- اطلاعات کامل یوزر
-- مسدود کردن یوزر
-- ازاد کردن یززر
-- ارسال پیام به یوزر
-- ارسال همگانی
-- فوروارد همگانی
-- قفل جوین اجباری نامحدود
-- درگاه `zarinpal` و `idpay` و به صورت کارت به کارت
-- درگاه `NOWPayments`
-- تنظیم متون ربات
-- گزارش لحضه از در ربات
-- مدیریت آمار ربات
-- مدیریت کامل بخش درگاه پرداخت
-- مدیریت کامل بخش راهنمای اتصال
-- مدیریت ضد اسپم ربات
-- مدیریت اکانت تست
-- لینک هوشمند
-- ساخت Qr code برای سرویس
-- مدیریت کامل پروتکل ها
-- امکان مدیریت کامل پنل/سرور
-- امکان مدیریت کامل پلن های اضافه شده ( حذف / تغییر نام / تغییر حجم و . . . )
-- افزودن ادمین به صورت نامحدود
-- حذف ادمین
-- مشاهده لیست ادمین ها
-- اطلاع رسانی کامل خرید سرویس و . . .
-- پشتیبانی انلاین در ربات
-- **در نسخه های بعدی آپشن های زیادی به ربات اضافه خواهد شد.**
+## Features of the panel bee robot
+- Stylish design
+- Multi panel
+- Multiplane
+- Add panel
+- Support from Senai and Marzban panel
+- Adding a plan with desired fields
+- Smart subscription
+- Complete server/panel status
+- Complete user information
+- Blocking the user
+- Freeing Yazer
+- Send a message to the user
+- Public posting
+- Public forwarding
+- Unlimited forced join lock
+- "zarinpal" and "idpay" port and card by card
+- ``NOWPayments'' portal
+- Set bot texts
+- Instant report from the robot
+- Manage bot statistics
+- Complete management of the payment portal
+- Complete management of the connection guide section
+- Bot anti-spam management
+- Test account management
+- Smart link
+- Creating a Qr code for the service
+- Complete management of protocols
+- Possibility of full panel/server management
+- Possibility of complete management of added plans (remove/rename/change volume, etc.)
+- Add unlimited admin
+- Remove admin
+- View the list of admins
+- Full notification of service purchase and. . .
+- Online support in the robot
+- **Many options will be added to the robot in the next versions.**
 
-## حمایت
+## Support
 - Bank Meli: `6037998195739130`
 - Tron (TRX): `TAwNcAYrHp2SxhchywA6NhUEF4aVwJHufD`
 - ETH, BNB, MATIC network (ERC20, BEP20): `0x36c5109885b59Ddd0cA4ea497765d326eb48396F`
 - Bitcoin network: `bc1qccunjllf2guca7dhwyw2x3u80yh4k0hg88yvpk`
 
-## کانال و گروه زنبور پنل
-**حتما به کانال و گروه زنبور پنل بپیوندید.**
+## Channel and bee panel group**Be sure to join the channel and group of the bee panel.**
 - Channel: [@ZanborPanel](https://t.me/ZanborPanel)
 - Group: [@ZanborPanelGap](https://t.me/ZanborPanelGap)
 - Bot: [@ZanborPanelBot](https://t.me/ZanborPanelBot)
